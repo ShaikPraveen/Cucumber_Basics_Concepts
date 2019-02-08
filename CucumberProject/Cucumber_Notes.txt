@@ -1,0 +1,121 @@
+CUCUMBER FRAMEWORK
+==================
+
+1.Pre defined Framework
+     Junit (TDD - Test Driven Framework)
+     TestNG (TDD - Test Driven Framework)
+     Cucumber(BDD -Behavior Driven Framework)
+
+2.User defined Framework
+     Data Driven Framework
+     Keyword Driven Framework
+     Hydrid Driven Framework
+
+What is Difference b/w TTD vs BDD?
+
+  1. In TTD we we will createe the Multiple testcases and generate the testng.xml file and 
+     execute the Testcases in Testng.xml file and it will generate the Reports. Non-Technical people can not understand this
+
+  2. In BDD We will create the Feature file, based on Feature file we will create Test Scenarios and Test cases.
+     and we will execute the Testcases using  TestRunner Class this is also called as Juint Class. Non-Technical people also understand this 
+     BDD Framework is common English language
+
+==============================================================
+
+CUCUMBER IMPLEMENTATION
+=======================
+
+1. First we need CUCUMBER Plugin in Eclipse
+   Go to Eclipse Marketplace -> Search for Cucumber and select =>Cucumber eclipse plugin 0.0.23
+
+  What is Feature File?
+    
+     Feature file contains all the Features of an Application
+
+      Application : ACEGRADES
+         Features : Login, Teacher Login, Parent Login, Student Login (These all are Features)
+                    We will create  Step Definations using this Feature Files
+
+To Specify steps in Feature file we need to use special language called Gherkin
+Feature
+Scenario
+Given
+When
+And 
+Then
+
+
+Given
+
+   we need to specify "Pre-requisites" 
+
+When/And
+
+    We need to specify Steps
+Then
+ 
+    We need to Expected   
+
+CUCUMBER OPTIONS
+================
+1. features = The path of the Feature File
+2. glue = Path of the step definations files
+3. format= To generate defferent types of reporting
+4. monochrome=display the console  output in a proper readable format
+5. strict = It will check if any step is not defined in step defination file
+6. dryRun = To check the mapping is proper between feature file and step def file
+
+
+===========================
+
+HOW TO PASS PARAMETERS IN CUCUMBER 
+====*==*==*==*==*==*==*==*==*==*==*
+  How to Comment Feature File using "#" Symbol
+
+  Parameters passing using Regular Expression
+
+DATA DRIVEN TESTNG IN CUCUMBER
+-------------------------------
+1. Data Driven testing can be donw using Scenario Outline and Examples Keyword
+2. Using Data Table with Single Input(We will use List variable)
+3. Using Data Table with Header (We will use Map variable)
+
+    What is difference between Scenario and Scenario Outline?
+
+==================================
+
+Tags and Hooks in Cucumber
+=========================
+
+   By using tagging feature we can ececutes/ignores specific test scenario from featue file
+
+Hooks:-
+=====
+  
+    I have 3 Scenarios are there. Each and Every scenario i want to execute Setup() method and After 3 Scenarios i want to execute TearDown() Method.
+
+Example:-
+
+        setUp()                                setUp()                      setUp()
+    
+       Scenario :1                            Scenario :2                   Scenario :3
+
+       tearDown()                              tearDown()                    tearDown()
+
+=============================================================================================================================================
+
+    
+      
+
+      
+
+    
+      
+
+     
+
+
+
+
+
+
